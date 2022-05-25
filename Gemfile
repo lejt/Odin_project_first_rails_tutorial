@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# heroku will install gem pg (postgres) in production while ignoring sqlite3 in development
+# dont need to install production group in local machine to save space
 group :development, :test do
  gem 'sqlite3'
 end
